@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Get a Quote | Drip on the Wall</title>
+    <meta name="author" content="Drip on the Wall">
+    <meta name="description" content="Request a FREE quote for your next project!">
+    <meta name="keywords"
+        content="Drip on the Wall, painting, indoor painting, outdoor painting, professional painting, Get a Quote, free quote, california painters">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/bulma.min.css" type="text/css">
+    <link rel="icon" href="../images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .btnOutlinedGreen {
+            background-color: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btnOutlinedGreen:hover {
+            color: #f5f5f5;
+        }
+
+        .navbar-item {
+            padding: 0 1.2rem;
+        }
+    </style>
+
+</head>
+
+<body class="has-navbar-fixed-top">
+
+    <!--  Navigation  -->
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <!--<div class="navbar-start"></div>-->
+            <div class="navbar-start">
+                <a href="../index.html" class="navbar-item" href="../index.html">Home</a>
+                <a href="../OurStory/ourstory.html" class="navbar-item" href="#">Our Story</a>
+                <a href="../WhyDripOnTheWall/whydriponthewall.html" class="navbar-item">Why Drip on the Wall?</a>
+                <a class="navbar-item" href="../OurServices/ourservices.html">Our Services</a>
+                <a href="../ContactUs/contactus.html" class="navbar-item">Contact Us</a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button requestAQuoteGreen is-primary"><strong>Get a Quote</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--  Our Story splash  -->
+    <section class="hero is-small" data-aos="fade-in" data-aos-duration="1000">
+        <div id="heroBody" class="hero-body">
+            <div class="container">
+                <h1 id="animatedTextGreen" class=" has-text-centered animatedTextRed">Get a Quote</h1>
+            </div>
+        </div>
+    </section>
+
+    <!--    CONTACT FORM   -->
+    <section id="contactMe" class="section" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container">
+            <form class="form" action="https://formspree.io/#" method="POST" class="has-text-centered">
+                <div class="field">
+                    <label class="label" placeholder="Your name">Name</label>
+                    <div class="control">
+                        <input class="input inputMax" type="text" placeholder="Your name" required name="name">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input name="email" class="input inputMax" type="email" required placeholder="Your email">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Hey there" name="message" required></textarea>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button value="submit" type="submit" class="button is-link">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <footer class="footer tintGreen blockPadding" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container flexCol">
+            <p class="backgroundGreenSolid has-text-white is-size-4 has-text-weight-bold"><em><a class="linkWhite"
+                        href="#">hello@website.com</a></em></p>
+            <p class="is-size-4 mrgTop"><a href="tel:1-818-518-0485">(818) 518-0485</a></p>
+            <p class="is-size-5 has-text-centered mrgTop content">We're working hard Monday through Friday, 8am to 6pm.
+                We prefer email, but feel free to give us a ring too!</p>
+            <div class="flexRow mrgTop has-text-centered paddingLeftRight">
+                <a href="../index.html" class="is-size-6">Home </a><span>| </span>
+                <a href="../WhyDripOnTheWall/whydriponthewall.html" class="is-size-6">Why Drip on the Wall? </a><span>|
+                </span>
+                <a href="../OurStory/ourstory.html" class="is-size-6">Our Story </a><span>| </span>
+                <a href="../OurServices/ourservices.html" class="is-size-6">Our Services </a><span>| </span>
+                <a href="../ContactUs/contactus.html" class="is-size-6">Contact Us </a><span>| </span>
+                <a href="../GetAQuote/getaquote.html" class="is-size-6">Get a Quote </a><span>| </span>
+                <a href="../PrivacyPolicy/privacypolicy.html" class="is-size-6">Privacy Policy </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
+</body>
+
+</html>
