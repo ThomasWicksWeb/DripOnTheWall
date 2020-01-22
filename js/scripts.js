@@ -23,7 +23,8 @@ $(document).ready(function () {
 
     // Slick.js Thing
     $('.slickParent').slick({
-        
+        autoplay: true,
+        autoplaySpeed: 5000
       });
 
 });
