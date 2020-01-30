@@ -89,7 +89,6 @@ body {
 
 .testBOI {
   background-color: #FFA700;
-  height: 100vh;
 }
 
 .box {
@@ -211,6 +210,15 @@ body {
 /* Navbar */
 .navbar-item {
   padding: 0 1.2rem;
+}
+
+.navLogo {
+  max-height: 3.25rem;
+  margin-right: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px 20px;
 }
 
 /* Page-Specific Styling */
