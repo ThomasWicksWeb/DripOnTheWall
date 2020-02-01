@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
     // NAVBAR
@@ -13,6 +11,7 @@ $(document).ready(function () {
 
     // Removing bouncing arrow on scroll
     let arrow = $('.arrowBounce');
+
     function fixArrow() {
         if (window.scrollY >= 150) {
             arrow.fadeOut(450);
@@ -25,7 +24,10 @@ $(document).ready(function () {
 
     // Slick.js Thing
     $('.slickParent').slick({
-        
-      });
+        autoplay: true,
+        arrows: true,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+    });
 
 });
