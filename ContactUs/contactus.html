@@ -2,20 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Contact Us | Drip on the Wall</title>
-    <meta name="author" content="Drip on the Wall">
-    <meta name="description" content="Shoot us an email! We'll get back to you as soon as we possibly can!">
+    <meta name="author" content="Drip on the Wall" />
+    <meta name="description" content="Shoot us an email! We'll get back to you as soon as we possibly can!" />
     <meta name="keywords"
-        content="Drip on the Wall, painting, indoor painting, outdoor painting, professional painting, contact us, california painters">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <link rel="stylesheet" href="../css/bulma.min.css" type="text/css">
-    <link rel="icon" href="../images/favicon.png">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        content="Drip on the Wall, painting, indoor painting, outdoor painting, professional painting, contact us, california painters" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bulma.min.css" type="text/css" />
+    <link rel="icon" href="../images/favicon.png" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <style>
         .btnOutlinedGreen {
@@ -32,11 +36,9 @@
             padding: 0 1.2rem;
         }
     </style>
-
 </head>
 
 <body class="has-navbar-fixed-top">
-
     <!--  Navigation  -->
 
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -53,7 +55,8 @@
             <div class="navbar-start">
                 <a class="navbar-item navBtnHome" href="../index.html">Home</a>
                 <a class="navbar-item navBtnOurStory" href="../OurStory/ourstory.html">Our Story</a>
-                <a class="navbar-item navBtnWhyDOTW" href="../WhyDripOnTheWall/whydriponthewall.html">Why Drip on the Wall?</a>
+                <a class="navbar-item navBtnWhyDOTW" href="../WhyDripOnTheWall/whydriponthewall.html">Why Drip on the
+                    Wall?</a>
                 <a class="navbar-item navBtnOurServices" href="../OurServices/ourservices.html">Our Services</a>
                 <a class="navbar-item navBtnContactUs is-active is-active-yellow">Contact Us</a>
                 <div class="navbar-item">
@@ -64,17 +67,18 @@
                 </div>
             </div>
             <div class="navbar-end">
-                <img src="../images/dripOnTheWallLogo.png" alt="" class="navLogo">
+                <img src="../images/dripOnTheWallLogo.png" alt="" class="navLogo" />
             </div>
         </div>
     </nav>
-
 
     <!--  Our Story splash  -->
     <section class="hero is-small" data-aos="fade-in" data-aos-duration="1000">
         <div id="heroBody" class="hero-body">
             <div class="container">
-                <h1 id="animatedTextYellow" class=" has-text-centered animatedTextYellow">Contact Us</h1>
+                <h1 id="animatedTextYellow" class="has-text-centered animatedTextYellow">
+                    Contact Us
+                </h1>
             </div>
         </div>
     </section>
@@ -83,34 +87,89 @@
     <section id="contactMe" class="section" data-aos="fade-in" data-aos-duration="1000">
         <div class="container">
             <div class="bannerTextContainer">
-                <h3 class="has-text-centered sectionHeader sectionHeaderYellow is-size-3"><strong class="sectionHeader sectionHeaderYellow">Shoot us
-                        a message</strong></h3>
+                <h3 class="has-text-centered sectionHeader sectionHeaderYellow is-size-3">
+                    <strong class="sectionHeader sectionHeaderYellow">Let's Get Started!</strong>
+                </h3>
+                <h2 class="has-text-centered is-size-4 subHeader"><strong class="sectionHeader sectionHeaderYellow">Just
+                        fill out the form below and we will be in contact with you shortly!</strong></h2>
             </div>
-            <form class="form" action="https://formspree.io/#" method="POST" class="has-text-centered">
+            <form class="form" action="https://formspree.io/" method="POST" class="has-text-centered">
                 <div class="field">
-                    <label class="label" placeholder="Your name">Name</label>
-                    <div class="control">
-                        <input class="input inputMax" type="text" placeholder="Your name" required name="name">
+                    <label class="label is-size-5" placeholder="Your name">Full Name</label>
+                    <div class="control has-icons-left">
+                        <input class="input inputMax" type="text" placeholder="Let’s get acquainted" required
+                            name="name" />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
                     </div>
                 </div>
 
                 <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input name="email" class="input inputMax" type="email" required placeholder="Your email">
+                    <label class="label is-size-5" placeholder="Your name">Phone Number <span
+                            class="has-text-grey is-size-6">Format: 1234567890</span></label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="text" id="phone" name="Phone" placeholder="So we can contact you"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-phone"></i>
+                        </span>
                     </div>
                 </div>
 
                 <div class="field">
-                    <label class="label">Message</label>
+                    <label class="label is-size-5">Email</label>
+                    <div class="control has-icons-left">
+                        <input name="Email" class="input inputMax" type="email" required
+                            placeholder="You will receive a confirmation email" />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i> </span>
+                    </div>
+                </div>
+
+                <p class="is-size-5 has-text-weight-bold">Is this for your home or business?</p>
+                <div class="select">
+                    <select required name="Type of Work">
+                        <option value="home">Home</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label class="label is-size-5">Start Date <span
+                            class="has-text-grey is-size-6">(MM/DD/YYYY)</span></label>
+                    <div class="control has-icons-left">
+                        <input id="StartDate" autocomplete="off" class="input" name="Start Date" required type="text"
+                            placeholder="Start Date">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-calendar-check"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label is-size-5">Notes</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder="Hey there" name="message" required></textarea>
+                        <textarea class="textarea" placeholder="Please give a brief descriotion of your project"
+                            name="Message" required></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox has-text-weight-bold">
+                            <input type="checkbox" required>
+                            By clicking this box I acknowledge that my information will be securely stored by Drip On
+                            the Wall.</a>
+                        </label>
                     </div>
                 </div>
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button value="submit" type="submit" class="button is-link">Submit</button>
+                        <button value="submit" type="submit" class="button is-link">
+                            <strong>Submit</strong>
+                        </button>
                     </div>
                 </div>
             </form>
@@ -120,8 +179,9 @@
     <!--  Get a Quote  -->
     <section class="section blockPadding" data-aos="fade-in" data-aos-duration="1000">
         <div class="container flexCol">
-            <h2 class="is-size-2 has-text-centered sectionHeader sectionHeaderYellow"><strong class="sectionHeader sectionHeaderYellow">Looking to
-                    request a free quote?</strong></h2>
+            <h2 class="is-size-2 has-text-centered sectionHeader sectionHeaderYellow">
+                <strong class="sectionHeader sectionHeaderYellow">Looking to request a free quote?</strong>
+            </h2>
             <a href="#" class="button requestAQuoteYellow has-text-white has-text-weight-bold buttonInPage">Request a
                 Quote</a>
         </div>
@@ -130,24 +190,29 @@
     <!--  Footer  -->
     <footer class="footer tintGreen blockPadding">
         <div class="container flexCol">
-            <p class="backgroundYellowSolid has-text-white is-size-4 has-text-weight-bold"><em><a class="linkWhite"
-                        href="#">hello@website.com</a></em></p>
-            <p class="is-size-4 mrgTop"><a href="tel:1-818-518-0485">(818) 518-0485</a></p>
-            <p class="is-size-5 has-text-centered mrgTop content">We're working hard Monday through Friday, 8am to 6pm.
-                We prefer email, but feel free to give us a ring too!</p>
+            <p class="backgroundYellowSolid has-text-white is-size-4 has-text-weight-bold">
+                <em><a class="linkWhite" href="#">hello@website.com</a></em>
+            </p>
+            <p class="is-size-4 mrgTop">
+                <a href="tel:1-818-518-0485">(818) 518-0485</a>
+            </p>
+            <p class="is-size-5 has-text-centered mrgTop content">
+                We're working hard Monday through Friday, 8am to 6pm. We prefer email,
+                but feel free to give us a ring too!
+            </p>
             <div class="flexRow mrgTop has-text-centered paddingLeftRight">
-                    <a href="../index.html" class="is-size-6">Home </a><span>| </span>
-                    <a href="../WhyDripOnTheWall/whydriponthewall.html" class="is-size-6">Why Drip on the Wall? </a><span>| </span>
-                    <a href="../OurStory/ourstory.html" class="is-size-6">Our Story </a><span>| </span>
-                    <a href="../OurServices/ourservices.html" class="is-size-6">Our Services </a><span>| </span>
-                    <a href="../ContactUs/contactus.html" class="is-size-6">Contact Us </a><span>| </span>
-                    <a href="../RequestAQuote/requestaquote.html" class="is-size-6">Request a Quote </a><span>| </span>
-                    <a href="../PrivacyPolicy/privacypolicy.html" class="is-size-6">Privacy Policy </a>
+                <a href="../index.html" class="is-size-6">Home </a><span>| </span>
+                <a href="../WhyDripOnTheWall/whydriponthewall.html" class="is-size-6">Why Drip on the Wall? </a><span>|
+                </span>
+                <a href="../OurStory/ourstory.html" class="is-size-6">Our Story </a><span>| </span>
+                <a href="../OurServices/ourservices.html" class="is-size-6">Our Services </a><span>| </span>
+                <a href="../ContactUs/contactus.html" class="is-size-6">Contact Us </a><span>| </span>
+                <a href="../RequestAQuote/requestaquote.html" class="is-size-6">Request a Quote </a><span>| </span>
+                <a href="../PrivacyPolicy/privacypolicy.html" class="is-size-6">Privacy Policy
+                </a>
             </div>
         </div>
     </footer>
-
-
 
     <script src="../js/scripts.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -156,7 +221,13 @@
             once: true,
         });
     </script>
-
+    <script>
+        (function () {
+            $("#StartDate").datepicker({
+                dateFormat: 'mm/dd/yy'
+            });
+        })();
+    </script>
 </body>
 
 </html>
