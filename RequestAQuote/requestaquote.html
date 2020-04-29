@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/bulma.min.css" type="text/css">
     <link rel="icon" href="../images/favicon.png">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -51,14 +55,16 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <!--<div class="navbar-start"></div>-->
             <div class="navbar-start">
-                <a href="../index.html" class="navbar-item" href="../index.html">Home</a>
-                <a href="../OurStory/ourstory.html" class="navbar-item" href="#">Our Story</a>
-                <a href="../WhyDripOnTheWall/whydriponthewall.html" class="navbar-item">Why Drip on the Wall?</a>
-                <a class="navbar-item" href="../OurServices/ourservices.html">Our Services</a>
-                <a href="../ContactUs/contactus.html" class="navbar-item">Contact Us</a>
+                <a class="navbar-item navBtnHome" href="../index.html">Home</a>
+                <a class="navbar-item navBtnOurStory" href="../OurStory/ourstory.html">Our Story</a>
+                <a class="navbar-item navBtnWhyDOTW" href="../WhyDripOnTheWall/whydriponthewall.html">Why Drip on the
+                    Wall?</a>
+                <a class="navbar-item navBtnOurServices" href="../OurServices/ourservices.html">Our Services</a>
+                <a class="navbar-item navBtnContactUs">Contact Us</a>
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button requestAQuoteGreen is-primary"><strong>Request a Quote</strong></a>
+                        <a href="../RequestAQuote/requestaquote.html"
+                            class="button requestAQuoteGreen is-primary"><strong>Request a Quote</strong></a>
                     </div>
                 </div>
             </div>
@@ -78,31 +84,90 @@
     <!--    CONTACT FORM   -->
     <section id="contactMe" class="section" data-aos="fade-in" data-aos-duration="1000">
         <div class="container">
-            <form class="form" action="https://formspree.io/#" method="POST" class="has-text-centered">
+            <div class="bannerTextContainer">
+                <h3 class="has-text-centered sectionHeader sectionHeaderYellow is-size-3">
+                    <strong class="sectionHeader sectionHeaderGreen">Let's Get Started!</strong>
+                </h3>
+                <h2 class="has-text-centered is-size-4 subHeader"><strong class="sectionHeader sectionHeaderGreen">Just
+                        fill out the form below and we will be in contact with you shortly!</strong></h2>
+            </div>
+            <form class="form" action="https://formspree.io/" method="POST" class="has-text-centered">
                 <div class="field">
-                    <label class="label" placeholder="Your name">Name</label>
-                    <div class="control">
-                        <input class="input inputMax" type="text" placeholder="Your name" required name="name">
+                    <label class="label is-size-5" placeholder="Your name">Full Name</label>
+                    <div class="control has-icons-left">
+                        <input class="input inputMax" type="text" placeholder="Let’s get acquainted" required
+                            name="name" />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
                     </div>
                 </div>
 
                 <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input name="email" class="input inputMax" type="email" required placeholder="Your email">
+                    <label class="label is-size-5" placeholder="Your name">Phone Number <span
+                            class="has-text-grey is-size-6">Format: 1234567890</span></label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="text" id="phone" name="Phone" placeholder="So we can contact you"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-phone"></i>
+                        </span>
                     </div>
                 </div>
 
                 <div class="field">
-                    <label class="label">Message</label>
+                    <label class="label is-size-5">Email</label>
+                    <div class="control has-icons-left">
+                        <input name="Email" class="input inputMax" type="email" required
+                            placeholder="You will receive a confirmation email" />
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i> </span>
+                    </div>
+                </div>
+
+                <p class="is-size-5 has-text-weight-bold">Is this for your home or business?</p>
+                <div class="select">
+                    <select required name="Type of Work">
+                        <option value="home">Home</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label class="label is-size-5">Start Date <span
+                            class="has-text-grey is-size-6">(MM/DD/YYYY)</span></label>
+                    <div class="control has-icons-left">
+                        <input id="StartDate" autocomplete="off" class="input" name="Start Date" required type="text"
+                            placeholder="Start Date">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-calendar-check"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label is-size-5">Notes</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder="Hey there" name="message" required></textarea>
+                        <textarea class="textarea" placeholder="Please give a brief descriotion of your project"
+                            name="Message" required></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox has-text-weight-bold">
+                            <input type="checkbox" required>
+                            By clicking this box I acknowledge that my information will be securely stored by Drip On
+                            the Wall.</a>
+                        </label>
                     </div>
                 </div>
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button value="submit" type="submit" class="button is-link">Submit</button>
+                        <button value="submit" type="submit" class="button is-link">
+                            <strong>Submit</strong>
+                        </button>
                     </div>
                 </div>
             </form>
@@ -138,6 +203,13 @@
         AOS.init({
             once: true,
         });
+    </script>
+    <script>
+        (function () {
+            $("#StartDate").datepicker({
+                dateFormat: 'mm/dd/yy'
+            });
+        })();
     </script>
 
 </body>
