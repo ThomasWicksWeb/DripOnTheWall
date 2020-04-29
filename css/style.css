@@ -750,6 +750,14 @@ form {
   padding-top: 0;
 }
 
+.select {
+  margin-bottom: 1rem;
+}
+
+.subHeader {
+  margin: -1rem 0 2rem 0;
+}
+
 /* Grid Image Galleries */
 .ourWorkSec {
   max-width: 900px;
