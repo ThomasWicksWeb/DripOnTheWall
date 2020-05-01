@@ -54,7 +54,7 @@
 /* Global Styles */
 body {
   background-color: #f5f5f5;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   overflow-x: hidden;
   line-height: 1.6 !important;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .testBOI {
-  background-color: #FFA700;
+  background-color: #ffa700;
 }
 
 .box {
@@ -141,8 +141,8 @@ body {
 
 .navbar-item {
   font-weight: 900;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .navbar-item:hover:not(:last-child) {
@@ -156,23 +156,23 @@ body {
 }
 
 .navbar-item.navBtnOurStory:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#0070B1), color-stop(#006AFF), color-stop(#0088FF), color-stop(#009DF7), to(#00AEC6));
-  background-image: linear-gradient(to bottom right, #0070B1, #006AFF, #0088FF, #009DF7, #00AEC6);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#0070b1), color-stop(#006aff), color-stop(#0088ff), color-stop(#009df7), to(#00aec6));
+  background-image: linear-gradient(to bottom right, #0070b1, #006aff, #0088ff, #009df7, #00aec6);
 }
 
 .navbar-item.navBtnWhyDOTW:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFA700), color-stop(#FFA953), to(#FFB188));
-  background-image: linear-gradient(to right bottom, #FFA700, #FFA953, #FFB188);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa700), color-stop(#ffa953), to(#ffb188));
+  background-image: linear-gradient(to right bottom, #ffa700, #ffa953, #ffb188);
 }
 
 .navbar-item.navBtnOurServices:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#A178DF), to(#BE93FD));
-  background-image: linear-gradient(to bottom right, #845EC2, #A178DF, #BE93FD);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#a178df), to(#be93fd));
+  background-image: linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
 }
 
 .navbar-item.navBtnContactUs:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#FFE500));
-  background-image: linear-gradient(to right bottom, #ffa900, #f7be16, #FFE500);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#ffe500));
+  background-image: linear-gradient(to right bottom, #ffa900, #f7be16, #ffe500);
 }
 
 /* Helper Classes */
@@ -222,6 +222,10 @@ body {
   padding: 10px 20px;
 }
 
+.navbar-mobile {
+  display: none;
+}
+
 /* Page-Specific Styling */
 .tint {
   background-color: #f0f0f0;
@@ -236,27 +240,27 @@ body {
 }
 
 .is-active-green {
-  border-bottom: 3px solid #00AA9C;
+  border-bottom: 3px solid #00aa9c;
 }
 
 .is-active-purple {
-  border-bottom: 3px solid #845EC2;
+  border-bottom: 3px solid #845ec2;
 }
 
 .is-active-blue {
-  border-bottom: 3px solid #006AFF;
+  border-bottom: 3px solid #006aff;
 }
 
 .is-active-yellow {
-  border-bottom: 3px solid #FFE141;
+  border-bottom: 3px solid #ffe141;
 }
 
 .is-active-orange {
-  border-bottom: 3px solid #FFA700;
+  border-bottom: 3px solid #ffa700;
 }
 
 .greenText {
-  color: #00AA9C;
+  color: #00aa9c;
 }
 
 /* Buttons & Links */
@@ -266,8 +270,8 @@ body {
 
 .button,
 a {
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .linkWhite {
@@ -280,8 +284,8 @@ a {
   border: none;
   font-size: 1.25rem;
   margin: 0 4px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .pull-left:hover,
@@ -297,9 +301,9 @@ a {
 #animatedTextGreen,
 #animatedTextPurple,
 #animatedTextOrange {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-weight: bolder;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   background-size: 1400% 1400%;
   color: #333;
   -webkit-animation: BGGradient 30s ease infinite;
@@ -310,10 +314,10 @@ a {
 #animatedTextRed {
   margin-top: -5rem;
   font-size: 10rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#D65DB1), color-stop(#FF6F91), color-stop(#FF9671), to(#FFC75F));
-  background: linear-gradient(to bottom right, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F);
-  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#D65DB1), color-stop(#FF6F91), color-stop(#FF9671), to(#FFC75F));
-  background: webkit- linear-gradient(to bottom right, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F);
+  background: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#d65db1), color-stop(#ff6f91), color-stop(#ff9671), to(#ffc75f));
+  background: linear-gradient(to bottom right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f);
+  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#d65db1), color-stop(#ff6f91), color-stop(#ff9671), to(#ffc75f));
+  background: webkit- linear-gradient(to bottom right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -322,10 +326,10 @@ a {
 
 #animatedTextPurple {
   font-size: 6.2rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#A178DF), to(#BE93FD));
-  background: linear-gradient(to bottom right, #845EC2, #A178DF, #BE93FD);
-  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#A178DF), to(#BE93FD));
-  background: webkit- linear-gradient(to bottom right, #845EC2, #A178DF, #BE93FD);
+  background: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#a178df), to(#be93fd));
+  background: linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
+  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#a178df), to(#be93fd));
+  background: webkit- linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -334,10 +338,10 @@ a {
 
 #animatedTextGreen {
   font-size: 6.2rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background: linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
-  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background: webkit- linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
+  background: -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background: linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
+  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background: webkit- linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -346,10 +350,10 @@ a {
 
 #animatedTextBlue {
   font-size: 6.2rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#0070B1), color-stop(#006AFF), color-stop(#0088FF), color-stop(#009DF7), to(#00AEC6));
-  background: linear-gradient(to bottom right, #0070B1, #006AFF, #0088FF, #009DF7, #00AEC6);
-  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#0070B1), color-stop(#006AFF), color-stop(#0088FF), color-stop(#009DF7), to(#00AEC6));
-  background: webkit- linear-gradient(to bottom right, #0070B1, #006AFF, #0088FF, #009DF7, #00AEC6);
+  background: -webkit-gradient(linear, left top, right bottom, from(#0070b1), color-stop(#006aff), color-stop(#0088ff), color-stop(#009df7), to(#00aec6));
+  background: linear-gradient(to bottom right, #0070b1, #006aff, #0088ff, #009df7, #00aec6);
+  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#0070b1), color-stop(#006aff), color-stop(#0088ff), color-stop(#009df7), to(#00aec6));
+  background: webkit- linear-gradient(to bottom right, #0070b1, #006aff, #0088ff, #009df7, #00aec6);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -358,10 +362,10 @@ a {
 
 #animatedTextYellow {
   font-size: 6.2rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#FFE500));
-  background: linear-gradient(to right bottom, #ffa900, #f7be16, #FFE500);
-  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#FFE500));
-  background: webkit- linear-gradient(to right bottom, #ffa900, #f7be16, #FFE500);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#ffe500));
+  background: linear-gradient(to right bottom, #ffa900, #f7be16, #ffe500);
+  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#ffe500));
+  background: webkit- linear-gradient(to right bottom, #ffa900, #f7be16, #ffe500);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -370,35 +374,35 @@ a {
 
 #animatedTextOrange {
   font-size: 6.2rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FFA700), color-stop(#FFA953), to(#FFB188));
-  background: linear-gradient(to right bottom, #FFA700, #FFA953, #FFB188);
-  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#FFA700), color-stop(#FFA953), to(#FFB188));
-  background: webkit- linear-gradient(to right bottom, #FFA700, #FFA953, #FFB188);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ffa700), color-stop(#ffa953), to(#ffb188));
+  background: linear-gradient(to right bottom, #ffa700, #ffa953, #ffb188);
+  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#ffa700), color-stop(#ffa953), to(#ffb188));
+  background: webkit- linear-gradient(to right bottom, #ffa700, #ffa953, #ffb188);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 1400% 1400%;
-  line-height: .95;
+  line-height: 0.95;
 }
 
 #animatedTextArrow {
   font-size: 2rem;
   font-weight: bolder;
-  background: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#D65DB1), color-stop(#FF6F91), color-stop(#FF9671), to(#FFC75F));
-  background: linear-gradient(to bottom right, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F);
-  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#D65DB1), color-stop(#FF6F91), color-stop(#FF9671), to(#FFC75F));
-  background: webkit- linear-gradient(to bottom right, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F);
+  background: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#d65db1), color-stop(#ff6f91), color-stop(#ff9671), to(#ffc75f));
+  background: linear-gradient(to bottom right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f);
+  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#d65db1), color-stop(#ff6f91), color-stop(#ff9671), to(#ffc75f));
+  background: webkit- linear-gradient(to bottom right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f);
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #333;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   background-size: 1400% 1400%;
   padding-bottom: 5px;
   -webkit-animation: BGGradient 30s ease infinite, bounce 2s infinite;
   animation: BGGradient 30s ease infinite, bounce 2s infinite;
-  bottom: .7rem !important;
+  bottom: 0.7rem !important;
   z-index: 5;
 }
 
@@ -417,38 +421,38 @@ a {
 }
 
 .heroYellow {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#FFE500));
-  background-image: linear-gradient(to right bottom, #ffa900, #f7be16, #FFE500);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#ffe500));
+  background-image: linear-gradient(to right bottom, #ffa900, #f7be16, #ffe500);
 }
 
 .heroGreen {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background-image: linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background-image: linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
 }
 
 .heroPurple {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#A178DF), to(#BE93FD));
-  background-image: linear-gradient(to bottom right, #845EC2, #A178DF, #BE93FD);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#a178df), to(#be93fd));
+  background-image: linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
 }
 
 .heroOrange {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFA700), color-stop(#FFA953), to(#FFB188));
-  background-image: linear-gradient(to right bottom, #FFA700, #FFA953, #FFB188);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa700), color-stop(#ffa953), to(#ffb188));
+  background-image: linear-gradient(to right bottom, #ffa700, #ffa953, #ffb188);
 }
 
 .heroBlue {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#0070B1), color-stop(#006AFF), color-stop(#0088FF), color-stop(#009DF7), to(#00AEC6));
-  background-image: linear-gradient(to bottom right, #0070B1, #006AFF, #0088FF, #009DF7, #00AEC6);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#0070b1), color-stop(#006aff), color-stop(#0088ff), color-stop(#009df7), to(#00aec6));
+  background-image: linear-gradient(to bottom right, #0070b1, #006aff, #0088ff, #009df7, #00aec6);
 }
 
 .backgroundGreen {
-  background: -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background: linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
+  background: -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background: linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
   padding: 1.2rem 2rem;
 }
 
 .backgroundGreenSolid {
-  background: #00CA92;
+  background: #00ca92;
   padding: 1.2rem 2rem;
 }
 
@@ -458,12 +462,12 @@ a {
 }
 
 .backgroundBlueSolid {
-  background: #006AFF;
+  background: #006aff;
   padding: 1.2rem 2rem;
 }
 
 .backgroundOrangeSolid {
-  background: #FFA700;
+  background: #ffa700;
   padding: 1.2rem 2rem;
 }
 
@@ -473,7 +477,7 @@ a {
 }
 
 .backgroundPurpleSolid {
-  background: #845EC2;
+  background: #845ec2;
   padding: 1.2rem 2rem;
 }
 
@@ -481,61 +485,61 @@ a {
   position: absolute;
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
-  bottom: .05rem !important;
+  bottom: 0.05rem !important;
 }
 
 .sectionHeader {
-  padding: 0 .5rem 2rem .5rem;
+  padding: 0 0.5rem 2rem 0.5rem;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .sectionHeaderRed {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#D65DB1), color-stop(#FF6F91), color-stop(#FF9671), to(#FFC75F));
-  background-image: linear-gradient(to bottom right, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#d65db1), color-stop(#ff6f91), color-stop(#ff9671), to(#ffc75f));
+  background-image: linear-gradient(to bottom right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f);
 }
 
 .sectionHeaderGreen {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background-image: linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background-image: linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
 }
 
 .sectionHeaderYellow {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#FFE500));
-  background-image: linear-gradient(to right bottom, #ffa900, #f7be16, #FFE500);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#ffe500));
+  background-image: linear-gradient(to right bottom, #ffa900, #f7be16, #ffe500);
 }
 
 .sectionHeaderBlue {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#0070B1), color-stop(#006AFF), color-stop(#0088FF), color-stop(#009DF7), to(#00AEC6));
-  background-image: linear-gradient(to bottom right, #0070B1, #006AFF, #0088FF, #009DF7, #00AEC6);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#0070b1), color-stop(#006aff), color-stop(#0088ff), color-stop(#009df7), to(#00aec6));
+  background-image: linear-gradient(to bottom right, #0070b1, #006aff, #0088ff, #009df7, #00aec6);
 }
 
 .sectionHeaderOrange {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFA700), color-stop(#FFA953), to(#FFB188));
-  background-image: linear-gradient(to right bottom, #FFA700, #FFA953, #FFB188);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa700), color-stop(#ffa953), to(#ffb188));
+  background-image: linear-gradient(to right bottom, #ffa700, #ffa953, #ffb188);
 }
 
 .sectionHeaderPurple {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#A178DF), to(#BE93FD));
-  background-image: linear-gradient(to bottom right, #845EC2, #A178DF, #BE93FD);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#a178df), to(#be93fd));
+  background-image: linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
 }
 
 /* Request a Quote buttons (some styles are on .html docs instead) */
 .requestAQuoteYellow {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#FFE500));
-  background-image: linear-gradient(to right bottom, #ffa900, #f7be16, #FFE500);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa900), color-stop(#f7be16), to(#ffe500));
+  background-image: linear-gradient(to right bottom, #ffa900, #f7be16, #ffe500);
 }
 
 .requestAQuoteBlue {
-  background: -webkit-gradient(linear, left top, right bottom, from(#0070B1), color-stop(#006AFF), color-stop(#0088FF), color-stop(#009DF7), to(#00AEC6));
-  background: linear-gradient(to bottom right, #0070B1, #006AFF, #0088FF, #009DF7, #00AEC6);
+  background: -webkit-gradient(linear, left top, right bottom, from(#0070b1), color-stop(#006aff), color-stop(#0088ff), color-stop(#009df7), to(#00aec6));
+  background: linear-gradient(to bottom right, #0070b1, #006aff, #0088ff, #009df7, #00aec6);
 }
 
 .requestAQuoteGreen {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background-image: linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background-image: linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
 }
 
 .requestAQuoteRed {
@@ -545,13 +549,13 @@ a {
 }
 
 .requestAQuotePurple {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#A178DF), to(#BE93FD));
-  background-image: linear-gradient(to bottom right, #845EC2, #A178DF, #BE93FD);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#a178df), to(#be93fd));
+  background-image: linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
 }
 
 .requestAQuoteOrange {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFA700), color-stop(#FFA953), to(#FFB188));
-  background-image: linear-gradient(to right bottom, #FFA700, #FFA953, #FFB188);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffa700), color-stop(#ffa953), to(#ffb188));
+  background-image: linear-gradient(to right bottom, #ffa700, #ffa953, #ffb188);
 }
 
 /* About Us Portraits */
@@ -585,8 +589,8 @@ a {
 }
 
 .br-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background-image: linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background-image: linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
   -webkit-animation: br-2-animation 15s infinite alternate;
           animation: br-2-animation 15s infinite alternate;
 }
@@ -624,10 +628,10 @@ a {
 }
 
 .faGreen {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background-image: linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
-  background-image: webkit- -webkit-gradient(linear, left top, right bottom, from(#64E879), color-stop(#00CA92), color-stop(#00AA9C), to(#008995));
-  background-image: webkit- linear-gradient(to bottom right, #64E879, #00CA92, #00AA9C, #008995);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background-image: linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
+  background-image: webkit- -webkit-gradient(linear, left top, right bottom, from(#64e879), color-stop(#00ca92), color-stop(#00aa9c), to(#008995));
+  background-image: webkit- linear-gradient(to bottom right, #64e879, #00ca92, #00aa9c, #008995);
   font-size: 3rem;
 }
 
@@ -688,17 +692,17 @@ ul {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1 / 1 / 3 / 2;
-  color: #00CA92;
+  color: #00ca92;
   font-size: 2rem;
   padding-top: 3px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   -ms-grid-column-align: center;
       justify-self: center;
-  background: -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#A178DF), to(#BE93FD));
-  background: linear-gradient(to bottom right, #845EC2, #A178DF, #BE93FD);
-  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#845EC2), color-stop(#A178DF), to(#BE93FD));
-  background: webkit- linear-gradient(to bottom right, #845EC2, #A178DF, #BE93FD);
+  background: -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#a178df), to(#be93fd));
+  background: linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
+  background: webkit- -webkit-gradient(linear, left top, right bottom, from(#845ec2), color-stop(#a178df), to(#be93fd));
+  background: webkit- linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -970,7 +974,7 @@ form {
 }
 
 .customFlexP p {
-  margin: .2rem 0;
+  margin: 0.2rem 0;
 }
 
 .customFlexImg {
@@ -1190,6 +1194,20 @@ form {
   .blockPadding {
     padding: 5rem 0 !important;
   }
+  .navbar-menu {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+            flex-direction: row-reverse !important;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 864px) {
@@ -1236,13 +1254,13 @@ form {
     font-size: 6rem !important;
   }
   .section {
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
   }
   .section {
     padding-top: 0 !important;
   }
   .sectionHeader {
-    padding: 0rem .5rem .5rem .5rem;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
   }
   .blockPadding {
     padding: 3rem 0 !important;
@@ -1252,10 +1270,10 @@ form {
     padding: 0 2rem;
   }
   .customFlex {
-    margin: 2rem .5rem;
+    margin: 2rem 0.5rem;
   }
   .mobilePadding {
-    padding: 0 .5rem !important;
+    padding: 0 0.5rem !important;
   }
 }
 
