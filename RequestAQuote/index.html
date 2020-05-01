@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.5.10/cleave.min.js"></script>
+    <script src="../js/cleave-phone.country.us.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -63,10 +65,13 @@
                 <a class="navbar-item navBtnContactUs" href="../ContactUs/">Contact Us</a>
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a href="../RequestAQuote/"
-                            class="button requestAQuoteGreen is-primary"><strong>Request a Quote</strong></a>
+                        <a href="../RequestAQuote/" class="button requestAQuoteGreen is-primary"><strong>Request a
+                                Quote</strong></a>
                     </div>
                 </div>
+            </div>
+            <div class="navbar-end">
+                <img src="../images/dripOnTheWallLogo.png" alt="" class="navLogo">
             </div>
         </div>
     </nav>
@@ -105,7 +110,7 @@
 
                 <div class="field">
                     <label class="label is-size-5" placeholder="Your name">Phone Number <span
-                            class="has-text-grey is-size-6">Format: 1234567890</span></label>
+                            class="has-text-grey is-size-6">Format: 123 456 7890</span></label>
                     <div class="control has-icons-left">
                         <input class="input" type="text" id="phone" name="Phone" placeholder="So we can contact you"
                             pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
@@ -138,7 +143,7 @@
                             class="has-text-grey is-size-6">(MM/DD/YYYY)</span></label>
                     <div class="control has-icons-left">
                         <input id="StartDate" autocomplete="off" class="input" name="Start Date" required type="text"
-                            placeholder="Start Date">
+                            placeholder="When would you like to start your project?">
                         <span class="icon is-small is-left">
                             <i class="fas fa-calendar-check"></i>
                         </span>
@@ -146,17 +151,17 @@
                 </div>
 
                 <div class="field">
-                    <label class="label is-size-5">Notes</label>
+                    <label class="label is-size-5">Notes <span class="is-size-6 has-text-grey">(Optional)</span></label>
                     <div class="control">
-                        <textarea class="textarea" placeholder="Please give a brief descriotion of your project"
-                            name="Message" required></textarea>
+                        <textarea class="textarea" placeholder="Please give a brief description of your project"
+                            name="Message"></textarea>
                     </div>
                 </div>
 
                 <div class="field">
                     <div class="control">
                         <label class="checkbox has-text-weight-bold">
-                            <input type="checkbox" required>
+                            <input id="AgreeCheckbox" type="checkbox" required>
                             By clicking this box I acknowledge that my information will be securely stored by Drip On
                             the Wall.</a>
                         </label>
@@ -165,7 +170,7 @@
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button value="submit" type="submit" class="button is-link">
+                        <button id="SubmitBtn" value="submit" type="submit" class="button is-link" disabled>
                             <strong>Submit</strong>
                         </button>
                     </div>
@@ -210,6 +215,27 @@
                 dateFormat: 'mm/dd/yy'
             });
         })();
+
+        const Submit = $("#SubmitBtn");
+        const MyCheckbox = $("#AgreeCheckbox");
+
+        MyCheckbox.change(function () {
+            console.log("changed");
+            if (MyCheckbox.is(":checked")) {
+                Submit.attr("disabled", false);
+            } else {
+                Submit.attr("disabled", true);
+            }
+        })
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            var cleave = new Cleave('#phone', {
+                phone: true,
+                phoneRegionCode: 'US'
+            });
+        });
     </script>
 
 </body>
