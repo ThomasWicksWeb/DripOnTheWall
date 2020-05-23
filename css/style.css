@@ -68,20 +68,27 @@ body {
   line-height: 1.6;
 }
 
+#GreetingsFutureCustomer {
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+.AutoMargin {
+  margin: 0 auto;
+}
+
+.AutoMargin > * {
+  margin: 1rem auto !important;
+}
+
 .flexCenter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+
+.flexCenter .leftAlignedList {
+  margin: 0 auto;
+  text-align: start !important;
 }
 
 .flexCenter.content {
@@ -1166,6 +1173,34 @@ form {
 .button-404 {
   background-color: #d12646;
   color: white;
+}
+
+.ImageObjectContainer ul {
+  padding-top: 3rem;
+}
+
+.ImageObjectContainer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.ImageObjectContainer ul li img {
+  max-width: 12rem;
+  margin-right: 1rem;
+}
+
+.ImageObjectContainer ul li h3 {
+  padding-bottom: .5rem;
+  color: #D48838;
+}
+
+.ImageObjectContainer ul li p {
+  color: black;
 }
 
 /* ===== Responsive Media Queries ===== */

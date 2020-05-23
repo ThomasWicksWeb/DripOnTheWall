@@ -42,17 +42,14 @@
 */
 
 // Variables
-$animatedRainbow: linear-gradient(
-  to bottom right,
+$animatedRainbow: linear-gradient(to bottom right,
   #845ec2,
   #d65db1,
   #ff6f91,
   #ff9671,
-  #ffc75f
-);
+  #ffc75f);
 
-$gradientRed: linear-gradient(
-  to right bottom,
+$gradientRed: linear-gradient(to right bottom,
   #d62638,
   #d12646,
   #ca2851,
@@ -64,26 +61,21 @@ $gradientRed: linear-gradient(
   #b63484,
   #b9328f,
   #bc309b,
-  #bd30a8
-);
-$animatedRed: linear-gradient(
-  to bottom right,
+  #bd30a8);
+$animatedRed: linear-gradient(to bottom right,
   #d62638,
   #d12646,
   #ca2851,
   #c22d5c,
   #845ec2,
   #d65db1,
-  #ff9671
-);
+  #ff9671);
 
-$animatedGreen: linear-gradient(
-  to bottom right,
+$animatedGreen: linear-gradient(to bottom right,
   #64e879,
   #00ca92,
   #00aa9c,
-  #008995
-);
+  #008995);
 
 $animatedPurple: linear-gradient(to bottom right, #845ec2, #a178df, #be93fd);
 
@@ -91,16 +83,13 @@ $animatedYellow: linear-gradient(to right bottom, #ffa900, #f7be16, #ffe500);
 
 $animatedOrange: linear-gradient(to right bottom, #ffa700, #ffa953, #ffb188);
 
-$animatedBlue: linear-gradient(
-  to bottom right,
+$animatedBlue: linear-gradient(to bottom right,
   #0070b1,
   #006aff,
   #0088ff,
   #009df7,
-  #00aec6
-);
-$brBlue: linear-gradient(
-  to left bottom,
+  #00aec6);
+$brBlue: linear-gradient(to left bottom,
   #2648d6,
   #0058d6,
   #0064d3,
@@ -112,8 +101,7 @@ $brBlue: linear-gradient(
   #009ec2,
   #00a9c2,
   #0cb3c1,
-  #30bdbd
-);
+  #30bdbd);
 
 /* 
 * { background-color: rgba(255,0,0,.2); }
@@ -147,11 +135,33 @@ body {
   line-height: 1.6;
 }
 
+#GreetingsFutureCustomer {
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+.AutoMargin {
+  margin: 0 auto;
+
+  &>* {
+    margin: 1rem auto !important;
+  }
+}
+
 .flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+
+  margin: 0 auto;
+
+  line-height: 1.2;
+
+  & .leftAlignedList {
+    margin: 0 auto;
+    text-align: start !important;
+  }
 
   &.content {
     padding: 0;
@@ -178,7 +188,7 @@ body {
   margin: 10px 0;
 }
 
-.columnPadding > * {
+.columnPadding>* {
   padding: 0 7px;
 }
 
@@ -276,7 +286,7 @@ body {
 }
 
 .navbar-mobile {
-    display: none;
+  display: none;
 }
 
 /* Page-Specific Styling */
@@ -469,13 +479,11 @@ a {
 
   &Red {
     background-image: $gradientRed;
-    background-image: linear-gradient(
-      to right bottom,
-      #d62638,
-      #d12646,
-      #ca2851,
-      #c22d5c
-    );
+    background-image: linear-gradient(to right bottom,
+        #d62638,
+        #d12646,
+        #ca2851,
+        #c22d5c);
   }
 
   &Yellow {
@@ -876,7 +884,7 @@ form {
   align-items: space-evenly;
   margin: 2rem;
 
-  & > * {
+  &>* {
     max-width: 45%;
     padding: 1rem;
   }
@@ -918,9 +926,11 @@ form {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -930,9 +940,11 @@ form {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -942,9 +954,11 @@ form {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -954,9 +968,11 @@ form {
   0% {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   }
+
   50% {
     border-radius: 44% 56% 47% 53% / 40% 42% 58% 60%;
   }
+
   100% {
     border-radius: 63% 37% 61% 39% / 49% 59% 41% 51%;
   }
@@ -966,6 +982,7 @@ form {
   0% {
     border-radius: 38% 62% 41% 59% / 58% 44% 56% 42%;
   }
+
   100% {
     border-radius: 55% 45% 62% 38% / 43% 68% 32% 57%;
   }
@@ -975,15 +992,18 @@ form {
   0% {
     border-radius: 76% 24% 45% 55% / 51% 20% 80% 49%;
   }
+
   50% {
     border-radius: 39% 61% 15% 85% / 59% 79% 21% 41%;
   }
+
   100% {
     border-radius: 19% 81% 71% 29% / 18% 42% 58% 82%;
   }
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -991,9 +1011,11 @@ form {
   100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-15px);
   }
@@ -1008,7 +1030,7 @@ form {
   align-items: center;
   flex-direction: column;
 
-  & > * {
+  &>* {
     margin: 10px 0;
     text-align: center;
   }
@@ -1030,6 +1052,60 @@ form {
   background-color: #d12646;
   color: white;
 }
+
+
+
+// Why Drip on the Wall
+.ImageObjectContainer {
+  & ul {
+
+    // Used to create padding between the top of the list and the page header
+    padding-top: 3rem;
+
+    & li {
+
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 2rem;
+
+      & img {
+        max-width: 12rem;
+        margin-right: 1rem;
+      }
+
+      & h3 {
+        padding-bottom: .5rem;
+        color: #D48838;
+      }
+
+      & p {
+        color: black;
+      }
+
+      // display: grid;
+      // grid-template-areas: "img title"
+      //   "img subtitle";
+      //   grid-gap: 0rem 2rem;
+
+      //   & img {
+      //     grid-area: img;
+      //     max-width: 20rem;
+      //   }
+
+      //   & h3 {
+      //     grid-area: title;
+      //   }
+
+      //   & p {
+      //     grid-area: subtitle;
+      //   }
+    }
+  }
+}
+
+
+
 
 /* ===== Responsive Media Queries ===== */
 
@@ -1071,11 +1147,11 @@ form {
   }
 
   .navbar-desktop {
-      display: none;
+    display: none;
   }
 
   .navbar-mobile {
-      display: flex;
+    display: flex;
   }
 
   .navbar-menu .navbar-brand {
@@ -1093,7 +1169,7 @@ form {
     flex-direction: column;
   }
 
-  .customFlex > * {
+  .customFlex>* {
     max-width: 95%;
     margin: 0 auto;
     padding-left: 0rem;
