@@ -81,6 +81,11 @@ body {
   margin: 1rem auto !important;
 }
 
+.TextIndent {
+  text-indent: 1rem;
+  padding-left: 1rem;
+}
+
 .flexCenter {
   margin: 0 auto;
   line-height: 1.2;
